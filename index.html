@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>CSS3列表/缩略图切换 -- by HKing</title>
+		<link rel="shortcut icon" href="../res/img/favicon.ico" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<style type="text/css">
+			*{font-size: 12px;list-style: none;}
+			i.fa{font-size: 20px;}
+			label{cursor: pointer;}
+			ul{padding: 0;margin: 14px 0 0 0;}
+			.list li img{display: inline-block;width: 80px;margin-right: 6px;}
+			.list li div{display: inline-block;vertical-align: top;}
+			input[type="radio"]{display: none;}
+			#showType2:checked ~ ul li{display: inline-block;}
+			#showType2:checked ~ ul li div{display: none;}
+			#showType2:checked ~ ul li img{width: 140px;}
+			input:checked + label i.fa{color: #f00;}
+		</style>
+	</head>
+	<body>
+		
+		
+		<input type="radio" name="showType" id="showType1" value="" />
+		<label for="showType1"><i class="fa fa-bars"></i></label>
+		<input type="radio" name="showType" id="showType2" value="" />
+		<label for="showType2"><i class="fa fa-clone"></i></label>
+		<ul class="list">
+			<li>
+				<img src="http://120.24.155.11:88/20170315/9104dba9c1124b66afb359ab1481bd9a.png" alt="" />
+				<div>
+					<p class="title">谢大脚</p>
+					<p>电视剧《乡村爱情》人物，性格朴实，豪爽，有血有肉，热心肠，喜欢帮助别人，由于月仙扮演。</p>
+				</div>
+			</li>
+			<li>
+				<img src="http://120.24.155.11:88/20170315/9104dba9c1124b66afb359ab1481bd9a.png" alt="" />
+				<div>
+					<p class="title">谢大脚</p>
+					<p>电视剧《乡村爱情》人物，性格朴实，豪爽，有血有肉，热心肠，喜欢帮助别人，由于月仙扮演。</p>
+				</div>
+			</li>
+		</ul>
+		
+	</body>
+</html>
